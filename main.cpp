@@ -7,11 +7,18 @@ using namespace std;
 class Whisky
 {
     private:
-        string Nome;
-        
-
-
+        string Name;
+        string Place;
+        string Age[];
     public:
+        void setName (string _Name);
+        string getName();
+
+        void setPlace (string _Place);
+        string getPlace();
+
+        void setAge (string _Age);
+	    string getAge();
 };
 
 void opc1()
@@ -47,6 +54,33 @@ void opc2()
 
 int main()
 { 
+    Whisky RL;
+    RL.setName ("Red Label");
+    RL.setPlace ("Scotch");
+    RL.setAge ("Unknow");
+
+    Whisky BL;
+    BL.setName ("Black Label");
+    BL.setPlace ("Scotch");
+    BL.setAge ("12 years");
+
+    Whisky GL;
+    GL.setName ("Grenn Label");
+    GL.setPlace ("Scotch");
+    GL.setAge ("15 years");
+    
+    Whisky GoL;
+    GoL.setName ("Gold Label");
+    GoL.setPlace ("Scotch");
+    GoL.setAge ("18 years");
+
+    Whisky BlL;
+    BlL.setName ("Blue Label");
+    BlL.setPlace ("Scotch");
+    BlL.setAge ("Unknow");
+
+
+
     int z,opc;
 
     cout<<"welcome, that its the world of whisky, and here"<<endl; 
