@@ -1,25 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <stdio.h>
+#include "Whisky.h"
 using namespace std;
-
-class Whisky
-{
-    private:
-        string Name;
-        string Place;
-        string Age[];
-    public:
-        void setName (string _Name);
-        string getName();
-
-        void setPlace (string _Place);
-        string getPlace();
-
-        void setAge (string _Age);
-	    string getAge();
-};
 
 void opc1()
 {
@@ -54,36 +37,37 @@ void opc2()
 
 int main()
 { 
-    Whisky RL;
-    RL.setName ("Red Label");
-    RL.setPlace ("Scotch");
-    RL.setAge ("Unknow");
-
-    Whisky BL;
-    BL.setName ("Black Label");
-    BL.setPlace ("Scotch");
-    BL.setAge ("12 years");
-
-    Whisky GL;
-    GL.setName ("Grenn Label");
-    GL.setPlace ("Scotch");
-    GL.setAge ("15 years");
+    int z,opc,qntbb, result;
+    Whisky Chanceler;
+    Chanceler.setName("Chanceler");
+    Chanceler.setPlace("ngm sabe");
+    Chanceler.setAge("ngm sabe");
     
-    Whisky GoL;
-    GoL.setName ("Gold Label");
-    GoL.setPlace ("Scotch");
-    GoL.setAge ("18 years");
 
-    Whisky BlL;
-    BlL.setName ("Blue Label");
-    BlL.setPlace ("Scotch");
-    BlL.setAge ("Unknow");
+    cout<<"olar sulista merda, quantos por cento tu vai tomar?" <<endl;
+    cin>>qntbb;
+
+    Chanceler.Bber(qntbb);
+    
+    cout <<"parabens sulista merda, tu ainda pode beber " <<Chanceler.getVolume()<< " da garrafa" <<endl;
 
 
 
-    int z,opc;
+    
 
-    cout<<"welcome, that its the world of whisky, and here"<<endl; 
+
+
+
+
+
+
+
+
+
+
+
+
+ /*   cout<<"welcome, that its the world of whisky, and here"<<endl; 
     cout<<"you gonna learn all what you want about whisky" <<endl;
     cout<<"type anything to continue" <<endl;
 
@@ -96,7 +80,7 @@ int main()
 
     cin>>opc;
 
-    switch (opc)
+    switch(opc)
     {  
         case 1:
             opc1();
@@ -107,10 +91,10 @@ int main()
             opc2();
             break;
 
-     
+ */    
 
   //      case 3:
   //          opc3();
   //          break;    
-    }        
+       return 0;    
 }
